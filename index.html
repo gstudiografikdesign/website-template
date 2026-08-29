@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand — Website Template</title>
+<meta name="description" content="Website-Template: Struktur, Layout und Scroll-Animationen bereit zur individuellen Anpassung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+    <a href="#" class="brand">
+      <span class="brand__mark">B</span>
+      <!-- EDIT: Markenname -->
+      Brand
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#features">Features</a>
+      <a href="#integrations">Integrationen</a>
+      <a href="#security">Sicherheit</a>
+      <a href="#testimonials">Referenzen</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn btn--link">Anmelden</a>
+      <a href="#contact" class="btn btn--primary">
+        Jetzt starten
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="#features">Features</a>
+    <a href="#integrations">Integrationen</a>
+    <a href="#security">Sicherheit</a>
+    <a href="#testimonials">Referenzen</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#" class="btn btn--outline">Anmelden</a>
+    <a href="#contact" class="btn btn--primary">Jetzt starten</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="badge" data-animate="blur">
+          <span class="badge__dot"></span>
+          <!-- EDIT: Kicker-Text -->
+          Neu: Version 2.0 ist da
+        </div>
+        <h1 class="h1" data-animate="blur" style="margin-top:16px;">
+          <!-- EDIT: Haupt-Headline -->
+          Smartere Tools für stärkeres Wachstum.
+        </h1>
+        <p class="text-lg text-muted" data-animate="blur" data-delay="200" style="margin-top:20px;max-width:520px;">
+          <!-- EDIT: Subheadline -->
+          Ersetze diesen Text durch eine kurze, klare Beschreibung deines Produkts —
+          was es tut und für wen es gemacht ist.
+        </p>
+        <div class="hero__actions" data-animate data-delay="350">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Kostenlos starten
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#features" class="btn btn--outline btn--lg">Mehr erfahren</a>
+        </div>
+        <div class="hero__meta" data-animate data-delay="500">
+          <div class="hero__avatars">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <!-- EDIT: Social proof -->
+          <span>Bereits von 2.000+ Teams genutzt</span>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-animate="scale" data-delay="200">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__card">
+          <div class="hero__card-top">
+            <div class="hero__chip"></div>
+            <span class="hero__card-num">•••• 4821</span>
+          </div>
+          <div class="hero__card-bottom">
+            <span class="hero__card-name">A. Mustermann</span>
+            <span class="hero__card-amount">€12.480</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FEATURES ======================= -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__copy">
+          <div class="eyebrow-row" data-animate="blur">
+            <span class="badge">Features</span>
+          </div>
+          <h2 class="h2" data-animate="blur" data-delay="100">
+            <!-- EDIT -->
+            Alles, was du für dein Business brauchst.
+          </h2>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <!-- EDIT: 6 Feature-Karten mit eigenem Icon/Titel/Text -->
+        <div class="card feature-card" data-animate data-delay="0">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3 class="h6">Schnell &amp; zuverlässig</h3>
+          <p>Kurze Beschreibung des ersten Features, klar und knapp formuliert.</p>
+        </div>
+        <div class="card feature-card" data-animate data-delay="100">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
+          </div>
+          <h3 class="h6">Globale Reichweite</h3>
+          <p>Kurze Beschreibung des zweiten Features, klar und knapp formuliert.</p>
+        </div>
+        <div class="card feature-card" data-animate data-delay="200">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 12h16v8H4z"/></svg>
+          </div>
+          <h3 class="h6">Transparente Preise</h3>
+          <p>Kurze Beschreibung des dritten Features, klar und knapp formuliert.</p>
+        </div>
+        <div class="card feature-card" data-animate data-delay="0">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          </div>
+          <h3 class="h6">Multi-Währung</h3>
+          <p>Kurze Beschreibung des vierten Features, klar und knapp formuliert.</p>
+        </div>
+        <div class="card feature-card" data-animate data-delay="100">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+          </div>
+          <h3 class="h6">Automatisierung</h3>
+          <p>Kurze Beschreibung des fünften Features, klar und knapp formuliert.</p>
+        </div>
+        <div class="card feature-card" data-animate data-delay="200">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
+          </div>
+          <h3 class="h6">Premium-Support</h3>
+          <p>Kurze Beschreibung des sechsten Features, klar und knapp formuliert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= INTEGRATIONS (scroll parallax) ======================= -->
+  <section class="integrations" id="integrations">
+    <div class="integrations__pin">
+      <div class="container integrations__heading">
+        <div class="badge" style="margin-bottom:16px;">Integrationen</div>
+        <h2 class="h2">
+          <!-- EDIT -->
+          Verbinde deine <span>liebsten Plattformen</span>
+        </h2>
+      </div>
+      <div class="integrations__logos" id="integrations-logos">
+        <!-- positions/labels are editable in script.js (INTEGRATION_LOGOS) -->
+        <div class="integrations__logo">A</div>
+        <div class="integrations__logo">B</div>
+        <div class="integrations__logo">C</div>
+        <div class="integrations__logo">D</div>
+        <div class="integrations__logo">E</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DARK / APP SECTION ======================= -->
+  <section class="section section--dark section--tight-bottom">
+    <div class="container app-section__inner">
+      <div class="app-section__copy">
+        <div class="badge badge--on-dark" data-animate="blur"><span class="badge__dot"></span>App verfügbar</div>
+        <h2 class="h2" data-animate="blur" data-delay="150" style="margin-top:16px;">
+          <!-- EDIT -->
+          Alles in einer sicheren App.
+        </h2>
+        <p class="text-lg" style="color:rgba(255,255,255,.7);margin-top:16px;" data-animate="blur" data-delay="300">
+          <!-- EDIT -->
+          Beschreibe hier kurz, was Nutzer in der mobilen App tun können.
+        </p>
+
+        <div class="app-section__list">
+          <div class="app-section__list-item" data-animate data-delay="400">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            <div>
+              <h3>Überall verwalten</h3>
+              <p>Ersetze diesen Text mit deinem eigenen ersten Punkt.</p>
+            </div>
+          </div>
+          <div class="app-section__list-item" data-animate data-delay="500">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            <div>
+              <h3>Volle Kontrolle</h3>
+              <p>Ersetze diesen Text mit deinem eigenen zweiten Punkt.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn--white" data-animate data-delay="600">
+          App herunterladen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        </a>
+      </div>
+
+      <div data-animate="blur" data-delay="600">
+        <div class="phone-mock">
+          <div class="phone-mock__card">
+            <span style="font-size:13px;color:rgba(255,255,255,.6);">Guthaben</span>
+            <p class="phone-mock__balance">€8.240,00</p>
+          </div>
+          <div class="phone-mock__row">
+            <span>Letzte Aktivität</span>
+            <span>Alle anzeigen</span>
+          </div>
+          <div class="phone-mock__card">
+            <div class="phone-mock__line" style="width:60%;"></div>
+            <div class="phone-mock__line" style="width:40%;"></div>
+          </div>
+          <div class="phone-mock__card">
+            <div class="phone-mock__line" style="width:70%;"></div>
+            <div class="phone-mock__line" style="width:45%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SECURITY / TRUST ======================= -->
+  <section class="section" id="security">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__copy">
+          <div class="eyebrow-row" data-animate="blur"><span class="badge">Sicherheit</span></div>
+          <h2 class="h2" data-animate="blur" data-delay="100">Sicherheit &amp; Compliance</h2>
+        </div>
+        <a href="#contact" class="btn btn--primary" data-animate data-delay="200">
+          Kostenlos starten
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="security-grid">
+        <div class="card card--elevated security-card" data-animate data-delay="0">
+          <h3 class="h5">Vollständig lizenziert</h3>
+          <p>Ersetze diesen Text durch eine eigene Beschreibung zu Lizenzierung/Regulierung.</p>
+        </div>
+        <div class="card card--featured security-card" data-animate data-delay="100">
+          <h3 class="h5">100% digitale Erfahrung</h3>
+          <p>Ersetze diesen Text durch eine eigene Beschreibung zum digitalen Produkt.</p>
+        </div>
+        <div class="card card--elevated security-card" data-animate data-delay="200">
+          <h3 class="h5">Unabhängig &amp; zuverlässig</h3>
+          <p>Ersetze diesen Text durch eine eigene Beschreibung zur Infrastruktur.</p>
+        </div>
+      </div>
+
+      <div class="cta-banner" data-animate data-delay="300">
+        <p>⚡️ Ersetze diesen Text durch eine kurze, prägnante Zusammenfassung deines Angebots.</p>
+        <a href="#contact" class="btn btn--dark">
+          Kostenlos starten
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= TESTIMONIALS ======================= -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__copy" style="max-width:683px;">
+          <div class="eyebrow-row" data-animate="blur"><span class="badge">Referenzen</span></div>
+          <h2 class="h3" data-animate="blur" data-delay="100">Gebaut für Teams, die Zuverlässigkeit schätzen.</h2>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="card card--elevated t-card" data-animate data-delay="0">
+          <div class="t-card__logo"></div>
+          <div class="t-card__quote">
+            <p>„Ersetze dieses Zitat durch ein echtes Kunden-Testimonial — kurz, konkret, glaubwürdig.“</p>
+            <div class="t-card__person">
+              <div class="t-card__avatar">S</div>
+              <div>
+                <p class="t-card__name">Sophia Martinez</p>
+                <p class="t-card__role">Co-Founder &amp; CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-video" data-animate data-delay="100">
+          <div class="t-video__row">
+            <span class="t-video__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Ansehen
+            </span>
+            <span class="t-video__brand"></span>
+          </div>
+        </div>
+
+        <div class="card card--elevated t-card" data-animate data-delay="200">
+          <div class="t-card__logo"></div>
+          <div class="t-card__quote">
+            <p>„Ersetze dieses Zitat durch ein echtes Kunden-Testimonial — kurz, konkret, glaubwürdig.“</p>
+            <div class="t-card__person">
+              <div class="t-card__avatar">D</div>
+              <div>
+                <p class="t-card__name">David Chen</p>
+                <p class="t-card__role">Head of Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-video" data-animate data-delay="300">
+          <div class="t-video__row">
+            <span class="t-video__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Ansehen
+            </span>
+            <span class="t-video__brand"></span>
+          </div>
+        </div>
+
+        <div class="card card--elevated t-card" data-animate data-delay="400">
+          <div class="t-card__logo"></div>
+          <div class="t-card__quote">
+            <p>„Ersetze dieses Zitat durch ein echtes Kunden-Testimonial — kurz, konkret, glaubwürdig.“</p>
+            <div class="t-card__person">
+              <div class="t-card__avatar">L</div>
+              <div>
+                <p class="t-card__name">Lena Berger</p>
+                <p class="t-card__role">Product Lead</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--elevated t-card" data-animate data-delay="500">
+          <div class="t-card__logo"></div>
+          <div class="t-card__quote">
+            <p>„Ersetze dieses Zitat durch ein echtes Kunden-Testimonial — kurz, konkret, glaubwürdig.“</p>
+            <div class="t-card__person">
+              <div class="t-card__avatar">M</div>
+              <div>
+                <p class="t-card__name">Marco Weber</p>
+                <p class="t-card__role">Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= BLOG ======================= -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__copy">
+          <div class="eyebrow-row" data-animate="blur"><span class="badge">Blog</span></div>
+          <h2 class="h2" data-animate="blur" data-delay="100">Artikel für Gründer &amp; Teams</h2>
+        </div>
+        <a href="#" class="btn btn--secondary" data-animate data-delay="200">
+          Alle Artikel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card" data-animate data-delay="0">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__meta"><span class="badge">Kategorie</span></div>
+          <h3>Titel des ersten Blogartikels hier einfügen</h3>
+          <div class="blog-card__foot"><span>28. Aug 2026</span><span>·</span><span>5 Min. Lesezeit</span></div>
+        </article>
+        <article class="blog-card" data-animate data-delay="100">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__meta"><span class="badge">Kategorie</span></div>
+          <h3>Titel des zweiten Blogartikels hier einfügen</h3>
+          <div class="blog-card__foot"><span>20. Aug 2026</span><span>·</span><span>4 Min. Lesezeit</span></div>
+        </article>
+        <article class="blog-card" data-animate data-delay="200">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__meta"><span class="badge">Kategorie</span></div>
+          <h3>Titel des dritten Blogartikels hier einfügen</h3>
+          <div class="blog-card__foot"><span>12. Aug 2026</span><span>·</span><span>6 Min. Lesezeit</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand"><span class="brand__mark">B</span>Brand</a>
+        <p>Ersetze diesen Text durch eine kurze Beschreibung deines Unternehmens.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 0 0-4 0"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Produkt</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#security">Sicherheit</a></li>
+          <li><a href="#integrations">Integrationen</a></li>
+          <li><a href="#">Preise</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#">Karriere</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p style="color:rgba(255,255,255,.6);font-size:14px;margin:0;">Updates direkt ins Postfach.</p>
+        <form id="newsletter-form">
+          <input type="email" required placeholder="E-Mail-Adresse" aria-label="E-Mail-Adresse">
+          <button type="submit" class="btn btn--primary">OK</button>
+        </form>
+        <p class="footer-newsletter__msg" id="newsletter-msg">Danke, du bist angemeldet!</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Brand. Alle Rechte vorbehalten.</span>
+      <ul>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">AGB</a></li>
+        <li><a href="#">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

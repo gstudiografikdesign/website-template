@@ -6,7 +6,7 @@
 :root{
   --background: 255 255 255;
   --foreground: 20 20 20;
-  --primary: 97 66 255;          /* accent / brand color */
+  --primary: 43 47 224;          /* accent / brand color (#2B2FE0) */
   --primary-foreground: 255 255 255;
   --secondary: 244 244 244;
   --secondary-foreground: 50 50 50;
@@ -345,7 +345,7 @@ button{font:inherit}
   position:absolute;
   border-radius:50%;
   background:rgb(var(--primary));
-  box-shadow:0 20px 60px rgba(97,66,255,.35);
+  box-shadow:0 20px 60px rgba(43,47,224,.35);
   animation:float 6s ease-in-out infinite;
 }
 .hero__orb--1{ width:120px;height:120px; top:14%; left:12%; }
@@ -493,7 +493,7 @@ button{font:inherit}
   margin-inline:auto;
   border:10px solid #1a1a1a;
   border-radius:44px;
-  background:linear-gradient(160deg, rgb(var(--primary)) 0%, #1a1030 100%);
+  background:linear-gradient(160deg, rgb(var(--primary)) 0%, #100f30 100%);
   box-shadow:0 30px 80px rgba(0,0,0,.5);
   overflow:hidden;
   padding:26px 18px;
@@ -591,8 +591,8 @@ button{font:inherit}
   align-items:flex-end;
   padding:20px;
   background:
-    linear-gradient(180deg, rgba(97,66,255,0) 35%, rgba(97,66,255,.7) 100%),
-    linear-gradient(135deg, #2a2140, #4b3aa8);
+    linear-gradient(180deg, rgba(43,47,224,0) 35%, rgba(43,47,224,.7) 100%),
+    linear-gradient(135deg, #14163a, #3236c8);
 }
 .t-video__row{ display:flex; align-items:center; justify-content:space-between; width:100%; }
 .t-video__play{
